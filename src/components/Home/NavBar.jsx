@@ -44,6 +44,12 @@ const NavBar = () => {
         setOpen(!isOpen);
     }
 
+    const handleSideNav = () => {
+        if(isOpen) {
+            setOpen(false);
+        }
+    }
+
    window.addEventListener('scroll', changeNavbarColor);
     
     return (
@@ -55,7 +61,7 @@ const NavBar = () => {
                 {navOptions.map((navItem) => (
                     <li key={`link-${navItem.name}`}>
                         <ScrollIntoView selector={navItem.selectorDiv}>
-                            <a>{navItem.name}</a>
+                            <a onClick={() => handleSideNav()}>{navItem.name}</a>
                         </ScrollIntoView>
                     </li>
                 ))}
