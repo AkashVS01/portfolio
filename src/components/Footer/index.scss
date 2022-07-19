@@ -1,0 +1,12 @@
+.footer {
+    margin-top: 5%;
+    background-color: black;
+    padding: 1% 0;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+    @media screen and (max-width: 640px) {
+        padding: 4% 0;
+    }
+}

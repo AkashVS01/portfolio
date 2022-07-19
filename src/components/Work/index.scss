@@ -1,0 +1,54 @@
+#work {
+    .title {
+        margin-top: 5%;
+        text-align: center;
+
+        @media screen and (max-width: 640px) {
+            margin-top: 10%;
+        }
+       
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .sub-title {
+            font-family: "Raleway", sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    .work-section {
+        background-color: black;
+        margin-top: 3%;
+        padding: 5%;
+
+        @media screen and (max-width: 640px) {
+            margin-top: 10%;
+            padding: 7%;
+        }
+
+        .w-date {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+
+        .w-title {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+
+        .w-place {
+            font-family: "Raleway", sans-serif;
+            font-weight: 300;
+        }
+
+        .w-content {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+        }
+    }
+}

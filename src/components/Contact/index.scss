@@ -1,0 +1,131 @@
+#contact {
+    .title {
+        margin-top: 5%;
+        text-align: center;
+       
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .sub-title {
+            font-family: "Raleway", sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    .contact-section {
+        padding: 8%;
+        padding-top: 4%;
+        padding-bottom: 0;
+
+        @media screen and (max-width: 640px) {
+           padding-top: 8%;
+           padding-left: 4%;
+        }
+
+        .contact-flexbox {
+            padding-left: 25%;
+            padding-right: 10%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 1000px) {
+                padding-left: 6%;
+                padding-right: 0;
+            }
+
+            .left-column {
+                .c-title {
+                    font-family: "Montserrat", sans-serif;
+                    margin-bottom: 12%;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+
+                .c-details {
+                    margin-bottom: 15%;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .react-icon {
+                    font-size: 25px;
+                    margin-bottom: 4%;
+                    margin-right: 6%;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .c-contact {
+                    font-family: "Montserrat", sans-serif;
+                    margin-bottom: 4%;
+                }
+            }
+
+            .right-column {
+                margin-top: 5%;
+                
+                .input-field {
+                    width: 100%;
+                    padding: 2%;
+                    font-family: "Montserrat", sans-serif;
+                    border: 1px solid grey;
+                    outline: none;
+                    border-radius: 6px;
+                    margin-bottom: 3%;
+                }
+    
+                .set-height {
+                    height: 45px;
+                }
+    
+                .submit-button {
+                    background-color: black;
+                    color: white;
+                    font-family: "Montserrat", sans-serif;
+                    padding: 2% 6%;
+                    border-radius: 6px;
+                    font-size: 0.9rem;
+    
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .success {
+                    margin-top: 3%;
+                    font-family: "Montserrat", sans-serif;
+                    color: green;
+
+                    @media screen and (max-width: 640px) {
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                    }
+                }
+
+                .failure {
+                    margin-top: 3%;
+                    font-family: "Montserrat", sans-serif;
+                    color: red;
+
+                    @media screen and (max-width: 640px) {
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+
+            
+        }
+
+        
+    }
+}

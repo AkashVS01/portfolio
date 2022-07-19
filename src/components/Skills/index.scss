@@ -1,0 +1,96 @@
+#skills {
+    .title {
+        margin-top: 5%;
+        text-align: center;
+
+        @media screen and (max-width: 640px) {
+            margin-top: 10%;
+        }
+       
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .sub-title {
+            font-family: "Raleway", sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    .tech-stacks {
+        margin-top: 4%;
+
+        @media screen and (max-width: 640px) {
+            margin-top: 8%;
+        }
+
+        .skill-container {
+            margin: 0 15%;
+            padding-left: 4%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            .skill-item {
+                flex-basis: 25%;
+                margin-bottom: 5%;
+
+                @media screen and (max-width: 640px) {
+                    margin-bottom: 10%;
+                    flex-basis: 40%;
+                }
+
+                .card {
+                    width: 150px;
+                    height: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    border-radius: 50%;
+                    transition: all 0.3s ease;
+
+                    @media screen and (max-width: 1000px) {
+                        width: 120px;
+                        height: 120px;
+                    }
+
+                    @media screen and (max-width: 640px) {
+                        width: 100px;
+                        height: 100px;
+                    }
+        
+                    img {
+                        width: 50%;
+                        height: 50%;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+                
+                .skill-name {
+                   margin-top: 7%;
+                   margin-left: 21%;
+                   font-family: "Montserrat", sans-serif;
+                   font-weight: 500;
+                }
+
+                .skill-certain-item {
+                    margin-left: 27%;
+                }
+
+                .skill-android {
+                    margin-left: 5%;
+                }
+            }
+        }
+       
+    }
+}
