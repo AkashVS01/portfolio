@@ -20,7 +20,7 @@ const About = () => {
                     <p className="greeting">Hello there!!</p>
                     <AnimationOnScroll animateIn="animate__fadeIn">
                         <p className="explanation">
-                            I am <b>Akash VS</b>. I am currently working as a Software Engineer II at <b>Walmart Global Tech India</b>, Bangalore. I have
+                            I am <b>Akash VS</b>. I am currently working as a Software Engineer II at <b>Walmart Global Tech India</b>, Bangalore. I
                             completed my Bachelor of Engineering in Computer Science at <b>PSG College of Technology</b>, Coimbatore. I am so passionate
                             about exploring and learning new technologies and stuffs. I have a good expertise at front-end development. I have
                             been following Machine learning and full-stack web development in depth. I love coding and solving problems. I try to
