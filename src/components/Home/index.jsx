@@ -15,7 +15,7 @@ const Home = () => {
         <div className="container">
             <NavBar />
 
-            <div className="home">
+            <div className="home" id="home">
                 <Animated animationIn="slideInUp">
                     <p className="i-title">WELCOME TO MY WORLD</p>
                 </Animated>

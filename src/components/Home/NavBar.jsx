@@ -32,12 +32,12 @@ const NavBar = () => {
     const [isOpen, setOpen] = useState(false);
 
     const changeNavbarColor = () => {
-        if(window.scrollY >= 80){
+        if (window.scrollY >= 80) {
             setColorChange(true);
-          }
-          else{
+        }
+        else {
             setColorChange(false);
-          }
+        }
     }
 
     const handleToggle = () => {
@@ -45,18 +45,20 @@ const NavBar = () => {
     }
 
     const handleSideNav = () => {
-        if(isOpen) {
+        if (isOpen) {
             setOpen(false);
         }
     }
 
-   window.addEventListener('scroll', changeNavbarColor);
-    
+    window.addEventListener('scroll', changeNavbarColor);
+
     return (
         <nav className={`nav-flexbox ${colorChange && "colorChange"}`}>
-            <div className="logo">
-                AKASH VS
-            </div>
+            <ScrollIntoView selector="#home">
+                <div className="logo">
+                    AKASH VS
+                </div>
+            </ScrollIntoView>
             <ul className={isOpen ? "nav-items" : ""}>
                 {navOptions.map((navItem) => (
                     <li key={`link-${navItem.name}`}>
@@ -67,7 +69,7 @@ const NavBar = () => {
                 ))}
             </ul>
             <div className="menu-btn">
-                <Hamburger toggled={isOpen} toggle={() => handleToggle()} className="size"/>
+                <Hamburger toggled={isOpen} toggle={() => handleToggle()} className="size" />
             </div>
         </nav>
     )
